@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>OpenGeni — Infrastructure for agents that actually finish the job.</title>
+<meta name="description" content="An open, self-hosted runtime for durable AI agent sessions. Your models, your tools, your infrastructure.">
+<meta property="og:title" content="OpenGeni — Built for the long run.">
+<meta property="og:description" content="An open, self-hosted runtime for durable AI agent sessions. Your models, your tools, your infrastructure.">
+<meta property="og:type" content="website">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="preload" href="assets/fonts/dm-sans-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="assets/fonts/ibm-plex-mono-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body id="top">
+
+<nav class="nav" id="nav" aria-label="Primary">
+  <div class="nav__pill">
+    <a class="brand" href="#top">
+      <svg class="mark" viewBox="75 39.5966 176 138.7295" aria-hidden="true"><path d="M251 83.5966L207 109L163 83.5966L119 109L75 83.5966L141 45.4915A44 44 0 0 1 185 45.4915ZM185.25 172.3642A44.5 44.5 0 0 1 140.75 172.3642L75 134.4034L119 109L163 134.4034L207 109L251 134.4034Z"/></svg>
+      <span>OpenGeni</span>
+    </a>
+    <div class="nav__links">
+      <a href="#solutions">Solutions</a>
+      <a href="#features">Features</a>
+      <a href="https://github.com/Cloudgeni-ai/opengeni" target="_blank" rel="noreferrer">Docs</a>
+      <a href="https://github.com/Cloudgeni-ai/opengeni" target="_blank" rel="noreferrer">GitHub</a>
+      <a class="btn btn--primary btn--sm" href="#start">Get started ↗</a>
+    </div>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="hero__spacer"></div>
+  <div class="hero__body">
+    <div class="badge">Open source · Apache-2.0</div>
+    <h1 class="hero__title">Infrastructure for agents that actually <em>finish the job.</em></h1>
+    <p class="hero__lede">An open, self-hosted runtime for durable AI agent sessions. Your models, your tools, your infrastructure.</p>
+    <div class="hero__cta">
+      <a class="btn btn--primary" href="#start">Get started ↗</a>
+      <a class="btn btn--ghost" href="https://github.com/Cloudgeni-ai/opengeni" target="_blank" rel="noreferrer">Read the docs</a>
+    </div>
+  </div>
+  <div class="hero__strip">
+    <span>Self-hosted</span><span>Model-agnostic</span><span>Tool-agnostic</span><span>Fully observable</span>
+  </div>
+</header>
+
+<main>
+  <section class="solutions" id="solutions">
+    <div class="section__intro">
+      <div class="eyebrow">01 — Solutions</div>
+      <h2 class="section__title">Agents that don't die when the tab does.</h2>
+      <p class="section__lede">Six commitments that hold whether you run in our sandbox or on your own machines.</p>
+    </div>
+    <div class="rule rule--h"></div>
+    <div class="solutions__grid">
+      <article class="item"><div class="item__n">01</div><h3 class="item__t item__t--lg">Model-agnostic</h3><p class="item__d">Frontier API or open weights on your own GPU. One interface; the agent never notices the swap.</p></article>
+      <article class="item"><div class="item__n">02</div><h3 class="item__t item__t--lg">Tool-agnostic</h3><p class="item__d">MCP servers, OpenAPI specs, plain functions. Declare a tool once, run it anywhere.</p></article>
+      <article class="item"><div class="item__n">03</div><h3 class="item__t item__t--lg">Runtime-agnostic</h3><p class="item__d">Laptop, container, edge or serverless. The loop does not care where it runs.</p></article>
+      <article class="item"><div class="item__n">04</div><h3 class="item__t item__t--lg">Memory beyond the window</h3><p class="item__d">Compaction, retrieval and durable state, so long tasks survive long contexts.</p></article>
+      <article class="item"><div class="item__n">05</div><h3 class="item__t item__t--lg">Guardrails as primitives</h3><p class="item__d">Permissions, sandboxes and budgets live inside the harness, not bolted on after.</p></article>
+      <article class="item"><div class="item__n">06</div><h3 class="item__t item__t--lg">Fully observable</h3><p class="item__d">Every step, token and tool call traced, replayable and diffable across models.</p></article>
+    </div>
+  </section>
+
+  <section class="features" id="features">
+    <div class="features__layout">
+      <aside class="features__aside">
+        <div class="eyebrow">02 — Features</div>
+        <h2 class="section__title">Twelve things the harness already does.</h2>
+        <p class="section__lede">All in the open-source core. No enterprise tier, no feature flags behind a sales call.</p>
+        <a class="link" href="https://github.com/Cloudgeni-ai/opengeni" target="_blank" rel="noreferrer">Read the documentation ↗</a>
+      </aside>
+      <div class="rule rule--v"></div>
+      <div class="features__grid">
+        <article class="item"><div class="item__n">01</div><h3 class="item__t">Reconnect and resume</h3><p class="item__d item__d--sm">A durable event history keeps the session available across reconnects, pauses, and restarts. Pick up the conversation without rebuilding the context.</p></article>
+        <article class="item"><div class="item__n">02</div><h3 class="item__t">Human approval gates</h3><p class="item__d item__d--sm">Require human sign-off before sensitive tool calls. Approval requests survive restarts, so an answer hours later can resume the waiting work.</p></article>
+        <article class="item"><div class="item__n">03</div><h3 class="item__t">Your own hardware</h3><p class="item__d item__d--sm">Enroll a laptop, build server, or GPU machine to run work with its local tools, files, and credentials. Choose a managed sandbox when you need an isolated environment.</p></article>
+        <article class="item"><div class="item__n">04</div><h3 class="item__t">Your model subscription</h3><p class="item__d item__d--sm">Connect a supported ChatGPT/Codex or SuperGrok subscription, use a provider API key, or choose prepaid credits. Keep your model choice separate from your agent infrastructure.</p></article>
+        <article class="item"><div class="item__n">05</div><h3 class="item__t">Logins and credentials</h3><p class="item__d item__d--sm">Govern secrets and credential rotation for long-running work. Saved browser sessions keep connected sites signed in, with access that can be revoked per site.</p></article>
+        <article class="item"><div class="item__n">06</div><h3 class="item__t">Team permissions</h3><p class="item__d item__d--sm">Keep teams and customers isolated with scoped roles and permissions. Give each person and integration the access their work requires.</p></article>
+        <article class="item"><div class="item__n">07</div><h3 class="item__t">Office-ready output</h3><p class="item__d item__d--sm">Create Word documents, Excel spreadsheets, and PowerPoint presentations as editable files. Review the output and carry it into your existing workflow.</p></article>
+        <article class="item"><div class="item__n">08</div><h3 class="item__t">Video generation</h3><p class="item__d item__d--sm">Generate video within an agent workflow, with organization-level controls for availability and spending.</p></article>
+        <article class="item"><div class="item__n">09</div><h3 class="item__t">Account recovery</h3><p class="item__d item__d--sm">Configure recovery custody before you need it. If an owner becomes unavailable, two of three custodians can approve recovery, followed by a seven-day waiting period.</p></article>
+        <article class="item"><div class="item__n">10</div><h3 class="item__t">Embeddable UI and SDK</h3><p class="item__d item__d--sm">Use React chat components and a typed SDK to bring sessions, live events, and approvals into your application. The same session API serves your own interface.</p></article>
+        <article class="item"><div class="item__n">11</div><h3 class="item__t">Cost attribution per run</h3><p class="item__d item__d--sm">Track consumption for each run and attribute usage to a team or customer. Review individual work instead of relying on a monthly total.</p></article>
+        <article class="item"><div class="item__n">12</div><h3 class="item__t">Code-mode tool use</h3><p class="item__d item__d--sm">Let the agent write code to orchestrate multiple tools in one workflow. Combine steps, work with intermediate results, and reduce repeated tool round trips.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <section class="start" id="start">
+    <h2 class="start__title">Built for the long run.</h2>
+    <p class="start__lede">Requirements: Bun, Docker, and OpenAI or Azure OpenAI credentials.</p>
+    <div class="start__cta">
+      <a class="btn btn--primary" href="https://github.com/Cloudgeni-ai/opengeni" target="_blank" rel="noreferrer">Get started ↗</a>
+      <button class="cmd" id="copy-cmd" type="button" data-cmd="git clone https://github.com/Cloudgeni-ai/opengeni.git &amp;&amp; cd opengeni &amp;&amp; bun run dev"><span class="cmd__prompt">$</span><span class="cmd__label">bun run dev</span></button>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="footer__top">
+    <div class="footer__brand">
+      <svg class="mark" viewBox="75 39.5966 176 138.7295" aria-hidden="true"><path d="M251 83.5966L207 109L163 83.5966L119 109L75 83.5966L141 45.4915A44 44 0 0 1 185 45.4915ZM185.25 172.3642A44.5 44.5 0 0 1 140.75 172.3642L75 134.4034L119 109L163 134.4034L207 109L251 134.4034Z"/></svg>
+      <span>OpenGeni</span>
+    </div>
+    <p class="footer__slogan">Built for the long run.</p>
+  </div>
+  <div class="footer__meta">
+    <span class="upper">Open source / Apache-2.0</span>
+    <div class="footer__links">
+      <a href="https://github.com/Cloudgeni-ai/opengeni" target="_blank" rel="noreferrer">GitHub ↗</a>
+      <a href="https://github.com/Cloudgeni-ai/opengeni" target="_blank" rel="noreferrer">Documentation ↗</a>
+      <a href="#start">Get started ↗</a>
+    </div>
+    <a href="#top">Back to top ↑</a>
+  </div>
+</footer>
+
+<script src="script.js" defer></script>
+</body>
+</html>
